@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Advanced 1</h1>
+
+        <p id="box4"></p>
+        <p id="box5"></p>
+        <p id="box6"></p>
+
+    <script>
+        // Advanced Exercise 1
+
+        // Sum the following variables and store the result in one new variable:
+        var a = 7;
+        var b = 14;
+        var c = "21";
+        var d = '36';
+        var e = 42;
+
+        
+        var mySum = a + b + Number(c) + Number(d) + e;
+        document.getElementById("box4").innerHTML = mySum;
+
+        // Multiply the following variables and store the result in one new variable:
+        var f = '1';
+        var g = 15;
+        var h = 8;
+        var i = "1";
+        
+        var myProduct = Number(f) * g * h * Number(i);
+        document.getElementById("box5").innerHTML = myProduct;
+        
+        // Divide the two results that you got from the arithmetic operations and print the result in the web browser.
+        document.getElementById("box6").innerHTML = mySum / myProduct
+
+    </script>
+    
+</body>
+</html>
