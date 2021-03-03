@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <p>my Variable:</p>
+    <p id="box1"></p>
+    <hr>
+    <p>My Variable separated:</p>
+    <p id="box2"></p>
+
+    
+    <script>
+        var myVariable = "mango/cherries/kiwi/grapes/pear/peach/orange/lemon";
+        var temp = new Array();
+        temp = myVariable.split("/");
+
+        document.getElementById("box1").innerHTML = myVariable;
+        document.getElementById("box2").innerHTML = temp[0] + "<br>" + temp[1] + "<br>" + temp[2] + "<br>" + temp[3] + "<br>" + temp[4] + "<br>" + temp[5] + "<br>" + temp[6] + "<br>" + temp[7];
+        
+
+    </script>
+</body>
+</html>

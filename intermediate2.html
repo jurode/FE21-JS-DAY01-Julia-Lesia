@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <p>First Array:</p>
+    <p id="box1"></p>
+    <p id="box2"></p>
+    <p id="box3"></p>
+    <hr>
+    <p>Second Array:</p>
+    <p id="box4"></p>
+    <p id="box5"></p>
+    <p id="box6"></p>
+
+    <script>
+
+        // first Array
+        var myArray = ["apple", "banana", "kiwi"]
+        document.getElementById("box1").innerHTML = myArray;
+
+        myArray.push("orange");
+        document.getElementById("box2").innerHTML = myArray;
+
+        myArray.pop();
+        document.getElementById("box3").innerHTML = myArray;
+
+        // second Array
+        myArray2 = ["monkey", "horse", "dog"];
+        document.getElementById("box4").innerHTML = myArray2;
+
+        myArray2.sort();
+        document.getElementById("box5").innerHTML = myArray2;
+
+        myArray2.unshift("cat");
+        document.getElementById("box6").innerHTML = myArray2;
+        
+        
+
+    </script>
+
+
+</body>
+</html>
